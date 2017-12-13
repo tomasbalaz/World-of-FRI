@@ -1,5 +1,6 @@
 package sk.balaz.friworld;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,7 +13,7 @@ import java.util.List;
 public class CommandNames {
 	
 	/* All valid command names */
-    private List<String> commandNames;
+    private List<String> commandNames = new ArrayList<String>();
     
     /**
      * Initialize all valid commands which are used in Game.
