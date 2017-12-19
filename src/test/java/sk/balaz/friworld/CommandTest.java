@@ -29,4 +29,10 @@ public class CommandTest {
 	public void testHasParameter() {
 		assertTrue(command.hasParameter());
 	}
+	
+	@Test
+	public void testIsDefined() {
+		command.setIsDefined(true);
+		assertTrue(command.isDefined());
+	}
 }

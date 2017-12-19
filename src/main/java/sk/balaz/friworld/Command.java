@@ -15,6 +15,9 @@ public class Command {
 	/* Command parameter */
 	private String parameter;
 	
+	/* Checks if command is defined in game commands */
+	private boolean isDefined = false;
+	
 	/**
 	 * Creates command with name and parameter.
 	 * 
@@ -44,6 +47,24 @@ public class Command {
 		return parameter;
 	}
 	
+	/**
+	 * Checks if command is defined in game commands.
+	 * 
+	 * @return True if command is defined in game commands, otherwise false.
+	 */
+	public boolean isDefined() {
+		return isDefined;
+	}
+
+	/**
+	 * Sets isDefined param to true if command  is defined in game commands.
+	 * 
+	 * @param isDefined True if command  is defined in game commands, otherwise false.
+	 */
+	public void setIsDefined(boolean isDefined) {
+		this.isDefined = isDefined;
+	}
+
 	/**
 	 * Checks if command has stored parameter.
 	 * 
